@@ -53,6 +53,8 @@ const url = `${window.location.origin}${window.location.pathname}?to=${encodeURI
   from
 )}&res=${encodeURIComponent(response)}`;
 
+  setLink(url);
+  setPage("preview");
 }
 
 

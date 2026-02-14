@@ -29,7 +29,7 @@ function App() {
     setResponse(urlRes);
     setPage("invitation");
   }
-}, []);
+}, [window.location.search]);
 
 
   function moveNoButton() {

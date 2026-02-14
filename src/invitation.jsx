@@ -47,14 +47,12 @@ function handleNext() {
 
   setError("");
 
-const url = `${window.location.origin}?to=${encodeURIComponent(
+const url = `${window.location.origin}${window.location.pathname}?to=${encodeURIComponent(
   to
 )}&msg=${encodeURIComponent(message)}&from=${encodeURIComponent(
   from
 )}&res=${encodeURIComponent(response)}`;
 
-  setLink(url);
-  setPage("preview");
 }
 
 

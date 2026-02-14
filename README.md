@@ -16,6 +16,7 @@ I built this with the help of AI and I understand the code.
 # Technologies
 - React
 - JavaScript
+- HTML
 - CSS
 
 # Author

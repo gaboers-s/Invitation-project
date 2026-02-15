@@ -34,8 +34,8 @@ function App() {
 
   function moveNoButton() {
     setNoPos({
-      x: Math.random() * 380 - 100,
-      y: Math.random() * 380 - 100,
+      x: Math.random() * 250 - 100,
+      y: Math.random() * 250 - 100,
     });
   }
 

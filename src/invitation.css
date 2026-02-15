@@ -27,20 +27,28 @@ body {
 .card-yes {
   background: white;
   width: 350px;
+  max-width: 90%;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   text-align: left;
   animation: fadeIn 0.5s ease;
   cursor: pointer;
+
+  /* Keep text inside but allow buttons to escape */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  position: relative;
+  overflow: visible; /* IMPORTANT */
 }
+
 
 /* Title */
 .card-input h1,
 .card-invitation h1,
 .card-yes h1 {
   color: #ff4d6d;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
 }
 
 /* Inputs */
@@ -58,6 +66,12 @@ body {
 
 .card-input input:focus {
   border-color: #ff4d6d;
+}
+
+/* Fix long links */
+.card-invitation input {
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 /* Buttons */
@@ -90,6 +104,15 @@ button:hover {
 .card-invitation h2 {
   margin: 15px 0;
   color: #444;
+}
+
+/* Wrap long text */
+.card-invitation h1,
+.card-invitation h2,
+.card-invitation h3,
+.card-yes h1 {
+  white-space: normal;
+  word-break: break-word;
 }
 
 /* Yes / No buttons */
@@ -126,7 +149,6 @@ button:hover {
   font-size: 22px;
   color: #ff4d6d;
 }
-
 
 /* Animation */
 @keyframes fadeIn {
